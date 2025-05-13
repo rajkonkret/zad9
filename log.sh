@@ -1,0 +1,1 @@
+echo "(data): Hello from cron" >> /var/log/cron.log
