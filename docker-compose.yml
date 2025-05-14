@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  cronjob:
+    build: .
+    container_name: cron_container
+    restart: unless-stopped
