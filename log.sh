@@ -1,1 +1,2 @@
-echo "(data): Hello from cron" >> /var/log/cron.log
+#!/bin/sh
+echo "$(date): Hello from cron" >> /var/log/cron.log

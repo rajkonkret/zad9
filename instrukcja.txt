@@ -1,0 +1,17 @@
+Na linuxie alpine cron działą odrobinę inaczej
+Działajaca wersaj docker wraz z instrukcją użycia i sprawdzenia
+
+
+docker build -t zad9-app .
+docker run -d --name zad9-kontener1 zad9-app
+docker logs zad9-kontener1
+
+-----
+ps aux | grep crond
+ls -l /log.sh
+cat /etc/crontabs/root
+cat /var/log/cron.log
+
+Przykładowy efekt:
+Wed May 14 11:19:00 UTC 2025: Hello from cron
+Wed May 14 11:20:00 UTC 2025: Hello from cron
